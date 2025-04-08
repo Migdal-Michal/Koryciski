@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nest Koryciski - Agroturystyka na Podlasiu</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="logo-container">
+            <img src="logo.png" alt="The Nest Koryciski Logo" class="logo">
+        </div>
+        <div class="hero-content">
+            <h1>The Nest Koryciski</h1>
+            <h2>Agroturystyka</h2>
+            <p class="tagline">Dom na wyłączność z 1 sypialnią i ogromnym ogrodem dla 4 osób</p>
+            <p class="price">333zł za noc za cały obiekt</p>
+            <a href="#contact" class="cta-button">Zarezerwuj pobyt</a>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <h2>Witaj w sercu Podlasia</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Siedlisko The Nest Koryciski jest kwintesencją Podlasia z jego oddechem przestrzeni, ćwierkotem ptaków konkurującym z turkotem traktorów, folklorystyczną wielokulturowością i wspaniałym, naturalnym jedzeniem.</p>
+                    <p>Otoczone polami i łąkami, gdzie żubry przechodzą przez główną i jedyną ulicę wsi i gdzie każdego ranka można wypić zamiast kawy na szybko, ciepłe mleko od krowy nie myśląc o niczym, to idealne miejsce na odpoczynek od codziennych wyzwań.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="20250403_140134.jpg" alt="Widok na siedlisko The Nest Koryciski">
+                </div>
+            </div>
+            <div class="intro-content reverse">
+                <div class="intro-text">
+                    <p>W skład siedliska, oprócz obszernego ogrodu ze starą stodołą, sadem owocowym i miejscem biesiadowania, wchodzi dom zbudowany i pielęgnowany z miłością, dom którego dusza wyziera z każdego zakątka i nadaje rytm życiu wokół.</p>
+                    <p>Stań się kimś innym na kilka dni, stań się częścią Podlasia.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="20250403_143626.jpg" alt="Ogród w The Nest Koryciski">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <!-- Image Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- All images from the folder -->
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="ZDJĘCIE GŁOWNE.jpg" alt="The Nest Koryciski - Zdjęcie główne">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="20250403_140134.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="20250403_140709.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="20250403_140717.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="20250403_140723.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="20250403_140731.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="20250403_140752.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="20250403_140839.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="20250403_140845.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="20250403_140907.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="20250403_141039.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="20250403_141109.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(12)">
+                    <img src="20250403_141247.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(13)">
+                    <img src="20250403_141314.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(14)">
+                    <img src="20250403_141337.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(15)">
+                    <img src="20250403_141350.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(16)">
+                    <img src="20250403_141419.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(17)">
+                    <img src="20250403_142139.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(18)">
+                    <img src="20250403_142241.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(19)">
+                    <img src="20250403_142333.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(20)">
+                    <img src="20250403_143511.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(21)">
+                    <img src="20250403_143555.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(22)">
+                    <img src="20250403_143626.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(23)">
+                    <img src="20250403_143640.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(24)">
+                    <img src="20250403_143756.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(25)">
+                    <img src="20250403_143900.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(26)">
+                    <img src="20250403_143927.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(27)">
+                    <img src="20250403_144336.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(28)">
+                    <img src="20250403_144538.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(29)">
+                    <img src="20250403_150929.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(30)">
+                    <img src="20250403_152705.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(31)">
+                    <img src="20250403_160037.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(32)">
+                    <img src="20250403_160847.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(33)">
+                    <img src="20250403_160956.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(34)">
+                    <img src="20250403_161332.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(35)">
+                    <img src="20250403_161423.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(36)">
+                    <img src="20250403_161447.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(37)">
+                    <img src="20250403_163802.jpg" alt="The Nest Koryciski">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(38)">
+                    <img src="20250403_165808.jpg" alt="The Nest Koryciski">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <!-- Close button -->
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+        
+        <!-- Lightbox content -->
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Zdjęcie The Nest Koryciski">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Co oferujemy</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Dom na wyłączność</h3>
+                    <p>Cały obiekt tylko dla Ciebie i Twoich bliskich</p>
+                </div>
+                <div class="feature">
+                    <h3>Ogromny ogród</h3>
+                    <p>Przestrzeń do wypoczynku na świeżym powietrzu</p>
+                </div>
+                <div class="feature">
+                    <h3>Bliskość natury</h3>
+                    <p>Wyjątkowa lokalizacja wśród pól i łąk Podlasia</p>
+                </div>
+                <div class="feature">
+                    <h3>Komfortowe wnętrza</h3>
+                    <p>Przytulne i stylowe pomieszczenia z duszą</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Rezerwacja</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Masz pytania lub chcesz zarezerwować pobyt?</p>
+                    <p>Zadzwoń do nas:</p>
+                    <a href="tel:880321327" class="phone">880 321 327</a>
+                </div>
+                <div class="contact-image">
+                    <img src="20250403_160847.jpg" alt="Widok na The Nest Koryciski">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Nest Koryciski - Agroturystyka. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Lightbox -->
+    <script>
+        // Array of all gallery images
+        const galleryImages = [
+            "ZDJĘCIE GŁOWNE.jpg",
+            "20250403_140134.jpg",
+            "20250403_140709.jpg",
+            "20250403_140717.jpg",
+            "20250403_140723.jpg",
+            "20250403_140731.jpg",
+            "20250403_140752.jpg",
+            "20250403_140839.jpg",
+            "20250403_140845.jpg",
+            "20250403_140907.jpg",
+            "20250403_141039.jpg",
+            "20250403_141109.jpg",
+            "20250403_141247.jpg",
+            "20250403_141314.jpg",
+            "20250403_141337.jpg",
+            "20250403_141350.jpg",
+            "20250403_141419.jpg",
+            "20250403_142139.jpg",
+            "20250403_142241.jpg",
+            "20250403_142333.jpg",
+            "20250403_143511.jpg",
+            "20250403_143555.jpg",
+            "20250403_143626.jpg",
+            "20250403_143640.jpg",
+            "20250403_143756.jpg",
+            "20250403_143900.jpg",
+            "20250403_143927.jpg",
+            "20250403_144336.jpg",
+            "20250403_144538.jpg",
+            "20250403_150929.jpg",
+            "20250403_152705.jpg",
+            "20250403_160037.jpg",
+            "20250403_160847.jpg",
+            "20250403_160956.jpg",
+            "20250403_161332.jpg",
+            "20250403_161423.jpg",
+            "20250403_161447.jpg",
+            "20250403_163802.jpg",
+            "20250403_165808.jpg"
+        ];
+        
+        // Current image index for lightbox
+        let currentImageIndex = 0;
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        
+        // Open lightbox with the selected image
+        function openLightbox(imageIndex) {
+            currentImageIndex = imageIndex;
+            lightboxImg.src = galleryImages[currentImageIndex];
+            lightbox.classList.add("show");
+            document.body.style.overflow = "hidden"; // Prevent scrolling while lightbox is open
+        }
+        
+        // Close the lightbox
+        function closeLightbox() {
+            lightbox.classList.remove("show");
+            document.body.style.overflow = "auto"; // Re-enable scrolling
+        }
+        
+        // Change image in lightbox (previous/next)
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            
+            // Loop back to the beginning or end if needed
+            if (currentImageIndex < 0) {
+                currentImageIndex = galleryImages.length - 1;
+            } else if (currentImageIndex >= galleryImages.length) {
+                currentImageIndex = 0;
+            }
+            
+            // Apply a small transition effect
+            lightboxImg.style.opacity = 0;
+            
+            // Change the image after a short delay
+            setTimeout(() => {
+                lightboxImg.src = galleryImages[currentImageIndex];
+                lightboxImg.style.opacity = 1;
+            }, 200);
+        }
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener("click", function(event) {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        
+        // Keyboard navigation for lightbox
+        document.addEventListener("keydown", function(event) {
+            if (lightbox.classList.contains("show")) {
+                if (event.key === "Escape") {
+                    closeLightbox();
+                } else if (event.key === "ArrowLeft") {
+                    changeImage(-1);
+                } else if (event.key === "ArrowRight") {
+                    changeImage(1);
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
