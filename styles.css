@@ -492,223 +492,83 @@ footer {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
     
     h2 {
-        font-size: 2rem;
+        font-size: 0.8rem;
     }
     
     .hero {
-        height: 80vh;
-        background-attachment: scroll; /* Better performance on mobile */
-    }
-    
-    .logo-container {
-        width: 180px;
-        height: 180px;
-        margin-bottom: 1.5rem;
-    }
-    
-    .intro-content, .intro-content.reverse, .contact-content {
-        display: block;
-        margin-bottom: 1.5rem;
-    }
-    
-    .intro-image {
-        margin-bottom: 1rem;
-    }
-    
-    .intro-text {
-        text-align: center;
-    }
-    
-    .intro-text p {
-        text-align: center;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-    
-    .feature {
-        padding: 1.5rem;
-    }
-    
-    .phone {
-        margin-top: 1.5rem;
-    }
-    
-    .prev, .next {
-        font-size: 30px;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .container {
-        padding: 1.5rem 0;
-        width: 90%;
-    }
-    
-    .hero-content {
-        padding: 1rem;
-    }
-    
-    .tagline {
-        font-size: 1rem;
-    }
-    
-    .price {
-        font-size: 1.3rem;
-    }
-    
-    .cta-button {
-        padding: 0.7rem 1.8rem;
-        font-size: 0.9rem;
-    }
-    
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    
-    .contact-info p {
-        font-size: 1.1rem;
-    }
-    
-    .lightbox-content img {
-        max-height: 60vh;
-    }
-    
-    .thumbnail {
-        width: 60px;
-        height: 45px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    .container {
-        width: 95%;
-        padding: 1rem 0;
+        height: 70vh;
+        background-attachment: scroll;
     }
     
     .logo-container {
         width: 150px;
         height: 150px;
-        margin-bottom: 1rem;
-    }
-    
-    section {
-        padding: 1.5rem 0;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-    
-    .gallery-item img {
-        height: 150px;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .prev, .next {
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .close-lightbox {
-        font-size: 32px;
-        top: 10px;
-        right: 15px;
-    }
-    
-    .hero {
-        height: 70vh;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
     }
     
     .hero-content {
-        padding: 0.8rem;
+        padding: 1rem;
     }
     
     .tagline {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.3;
     }
     
     .price {
-        font-size: 1.2rem;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
     }
     
     .cta-button {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.85rem;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
     }
     
     .intro-text p {
-        font-size: 0.95rem;
-        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+        text-align: center;
     }
-    
-    .intro-image {
-        margin-bottom: 0.8rem;
-    }
-    
-    .intro-image img {
-        width: 100%;
-    }
-    
-    .contact-info p {
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
         font-size: 1rem;
     }
     
-    .phone {
-        margin-top: 1.2rem;
+    h2 {
+        font-size: 0.8rem;
     }
     
-    .lightbox-content img {
-        max-height: 50vh;
+    .logo-container {
+        width: 120px;
+        height: 120px;
+        margin-top: 0;
+        margin-bottom: 0.3rem;
     }
     
-    .thumbnail {
-        width: 50px;
-        height: 38px;
+    .tagline {
+        font-size: 1rem;
     }
     
-    .thumbnails {
-        gap: 5px;
+    .price {
+        font-size: 2.8rem;
     }
     
-    .load-more-btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
+    .cta-button {
+        padding: 0.7rem 1.8rem;
+        font-size: 1rem;
     }
     
-    .intro-content, .intro-content.reverse {
-        margin-bottom: 1rem;
-    }
-    
-    .intro-image {
-        margin-bottom: 0.8rem;
-    }
-    
-    .feature {
-        padding: 1rem;
+    .intro-text p {
+        font-size: 0.85rem;
     }
 }
 
