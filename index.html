@@ -128,7 +128,7 @@
                     <p>Wyjątkowa lokalizacja wśród pól i łąk Podlasia</p>
                 </div>
                 <div class="feature">
-                    <h3>Komfortowe wnętrza</h3>
+                    <h3>Stylowe wnętrza</h3>
                     <p>Przytulne i stylowe pomieszczenia z duszą</p>
                 </div>
             </div>
@@ -213,8 +213,47 @@
         const loadMoreBtn = document.getElementById("load-more-btn");
         
         // Variables for load more functionality
-        let currentlyDisplayed = 8;
+        let currentlyDisplayed = 0;
         const imagesPerLoad = 8;
+        
+        // Function to determine initial number of images to show based on screen size
+        function getInitialImageCount() {
+            if (window.innerWidth <= 480) {
+                return 4; // Show only 4 images on mobile
+            } else {
+                return 8; // Show 8 images on larger screens
+            }
+        }
+        
+        // Initialize gallery with appropriate number of images
+        function initializeGallery() {
+            // Clear existing gallery items
+            galleryGrid.innerHTML = '';
+            
+            // Set initial number of images to display
+            currentlyDisplayed = getInitialImageCount();
+            
+            // Add initial images to gallery
+            for (let i = 0; i < currentlyDisplayed; i++) {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item';
+                galleryItem.onclick = function() { openLightbox(i); };
+                
+                const img = document.createElement('img');
+                img.src = galleryImages[i];
+                img.alt = "The Nest Koryciski";
+                
+                galleryItem.appendChild(img);
+                galleryGrid.appendChild(galleryItem);
+            }
+            
+            // Hide button if all images are loaded
+            if (currentlyDisplayed >= galleryImages.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'block';
+            }
+        }
         
         // Load more images function
         function loadMoreImages() {
@@ -244,6 +283,18 @@
         
         // Add event listener to load more button
         loadMoreBtn.addEventListener('click', loadMoreImages);
+        
+        // Handle window resize to adjust gallery
+        window.addEventListener('resize', function() {
+            // Only reinitialize if we're crossing the mobile breakpoint
+            if ((window.innerWidth <= 480 && currentlyDisplayed > 4) || 
+                (window.innerWidth > 480 && currentlyDisplayed <= 4)) {
+                initializeGallery();
+            }
+        });
+        
+        // Initialize gallery on page load
+        document.addEventListener('DOMContentLoaded', initializeGallery);
         
         // Update thumbnails
         function updateThumbnails() {
