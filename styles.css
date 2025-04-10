@@ -104,25 +104,24 @@ section {
 .logo-container {
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    padding: 5px;
-    width: 345px;
-    height: 345px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 100%;
+    width: 240px;
+    height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-    margin-top: -20px;
     margin-bottom: 10px;
     overflow: hidden;
 }
 
 .logo {
-    width: 100%;
-    height: 100%;
+    width: 140%;
+    height: 140%;
     object-fit: cover;
     border-radius: 50%;
+    margin-top: 10px;
 }
 
 .hero::before {
@@ -143,20 +142,16 @@ section {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    color: var(--light-text);
-    letter-spacing: 2px;
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #4a6741; /* Adjusted color to match image */
+    margin-bottom: 0.5rem;
 }
 
-.hero h2 {
-    color: var(--accent-color);
-    font-size: 2.2rem;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+.hero-content h2 {
+    font-size: 2rem;
+    color: #d4a76a; /* Adjusted color to match image */
+    margin-bottom: 1rem;
 }
 
 .hero h2::after {
@@ -164,37 +159,29 @@ section {
 }
 
 .tagline {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    font-weight: 800;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    color: #ffffff; /* White color for better contrast */
+    margin-bottom: 1rem;
 }
 
 .price {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--accent-color);
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    letter-spacing: 1px;
+    font-size: 2rem;
+    color: #d4a76a; /* Adjusted color to match image */
+    margin-bottom: 1.5rem;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: var(--primary-color);
-    color: var(--light-text);
+    background-color: #d4a76a; /* Adjusted color to match image */
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
     text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid var(--primary-color);
 }
 
 .cta-button:hover {
-    background-color: transparent;
-    color: var(--light-text);
+    background-color: #8b5a2b; /* Darker shade on hover */
 }
 
 /* Introduction Section */
@@ -490,7 +477,7 @@ footer {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 844px) {
     h1 {
         font-size: 1rem;
     }
@@ -504,11 +491,10 @@ footer {
         background-attachment: scroll;
     }
     
+    
     .logo-container {
-        width: 150px;
-        height: 150px;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
+        width: 300px;
+        height: 300px;
     }
     
     .hero-content {
@@ -516,9 +502,9 @@ footer {
     }
     
     .tagline {
-        font-size: 1rem;
+        font-size: 1000px;
         margin-bottom: 1rem;
-        line-height: 1.3;
+        line-height: 1.1;
     }
     
     .price {
@@ -536,6 +522,12 @@ footer {
         font-size: 0.9rem;
         text-align: center;
     }
+
+    .logo {
+        width: 140%;
+        height: 140%;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -548,14 +540,12 @@ footer {
     }
     
     .logo-container {
-        width: 120px;
-        height: 120px;
-        margin-top: 0;
-        margin-bottom: 0.3rem;
+        width: 200px;
+        height: 200px;
     }
     
     .tagline {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .price {
@@ -565,6 +555,8 @@ footer {
     .cta-button {
         padding: 0.7rem 1.8rem;
         font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     }
     
     .intro-text p {
@@ -630,4 +622,9 @@ footer {
     .lightbox-content img {
         max-height: 50vh;
     }
+}
+
+.hero-content p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 } 
